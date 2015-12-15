@@ -1,0 +1,88 @@
+@CHARSET "UTF-8";
+
+body {
+	background-image: url("../Homework15/photos/ba.gif-original");
+	
+}
+
+header {
+	font-family: 'Architects Daughter', cursive;		
+	font-size:20px;
+	padding-top: 20px;
+	padding-left:300px;
+}
+
+.skills {
+	font-family: 'Architects Daughter', cursive;		
+	font-size:20px;
+	padding-top: 20px;
+	padding-left:500px;
+	
+}
+
+.table {
+	padding-left:260px;
+}
+
+
+.links {
+	padding-left: 30px;
+	font-family: 'Shadows Into Light Two', cursive;
+}
+
+.picture {
+	padding-left:480px;
+ 	width:280px; 
+ 	height:350px;	
+}
+ 
+.text-form {
+	font-family: 'Pacifico', cursive;
+	padding-left:240px;
+	padding-right:270px;
+	font-size:18px;
+}
+
+.headline {
+	font-family: 'Architects Daughter', cursive;		
+	font-size:20px;
+	padding-top: 20px;
+	padding-left:140px;
+	
+}
+
+.text {
+	font-family: 'Architects Daughter', cursive;
+	
+}
+
+div.img {
+	margin:30px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+#contact {
+	display: inline;
+    width: 50%;
+    margin-left: 22%;
+}
+
+input , select , textarea , button {
+	margin: 1%;
+}

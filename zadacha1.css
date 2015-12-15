@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+
+input {
+	display:inline;
+}
+
+.small_inputs {
+	width: 60px;
+	}
+
+.medium_inputs {
+	width: 100px;
+
+}
+
+.large_inputs {
+	width: 200px;
+}
