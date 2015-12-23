@@ -1,0 +1,112 @@
+@CHARSET "UTF-8";
+
+.header {
+	margin: 0px;
+}
+.header div {
+	background-color: #9b6600;
+	width: 100%;
+	padding-bottom: 2%;
+	margin: 0%;
+	
+}
+
+.header h2 {
+	margin: 0%;
+	padding-left: 1%;
+	padding-top: 0.5%;
+	
+}
+
+.header p {
+	padding-left: 2%;
+	padding-bottom: 1%;
+}
+
+.text {
+	color: #ffffff;
+}
+
+.section {
+	margin: 0px;
+	height: 440px;
+}
+.navigation {
+	background-color: #58201f;
+	width: 15%;
+	height: 100%;
+	margin: 0%;
+	float: left;
+}
+
+.navigation div {
+	background-color: #64332f;
+	width: 90%;
+	padding-bottom: 10%;
+	margin: 0px;
+}
+
+.navigation h2 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 15%;
+	padding: 5%;
+	width: 80%;
+}
+
+.text li {
+	padding: 10%;
+}
+
+.main-page {
+	float: left;
+	background-color: #ffffcd;
+	height: 100%;
+	width: 70%;
+}
+
+.main-page h1 {
+	padding-left: 5%;
+	font-weight: bold;
+}
+
+.main-page p {
+	margin-left: 10%;
+	margin-top: 3%;
+	margin-bottom: 0%;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+.right-page {
+	background-color: #87874b;
+	float: right;
+	width: 15%;
+	height: 100%;
+}
+
+.right-page div {
+	background-color: #999766;
+	width: 90%;
+	padding: 5%;
+}
+
+.right-page h2 {
+	align: right;
+	font-weight: bold;
+}
+
+.footer div {
+	background-color: #656465;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	
+}
+
+.footer p {
+	margin-left: 30%;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	font-size: 100%;
+}
+

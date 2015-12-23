@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+
+.head {
+	background-color:#4483c7;
+	padding:1%;
+	font-family: 'Architects Daughter', cursive;
+	font-size:18px;
+	color:white;
+}
+
+h3 {
+	font-family: 'Architects Daughter', cursive;
+	padding-left:6%;
+
+}
+
+.heading {
+	background-color:#538620;
+	color:white;
+	font-family: 'Architects Daughter', cursive;
+	padding:0.5%;
+	width:80%;
+	margin: 1% 6% 0 6%;
+	
+}
+
+.text {
+	border:1px solid #538620;
+	background-color:#ffffee;
+	color:black;
+	font-family: 'Architects Daughter', cursive;
+	width:80%;
+	padding:0.4%;
+	margin: 0 6% 0 6%;
+}
+
+div p {
+	color:grey;
+	
+}

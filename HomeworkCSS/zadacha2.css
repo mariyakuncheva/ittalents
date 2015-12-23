@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+.head {
+	background-color:#000066;
+	padding:0.5%;
+}
+
+.content div:nth-child(1) {
+	background-color:#008000;
+	width:69%;
+	
+	margin-top:1%;
+	padding-bottom:30%;
+	float:right;
+}
+
+.content div:nth-child(2) {
+	background-color:#800080;
+	width:29%;
+	
+	margin-top:1%;
+	padding-bottom:30%;
+	float:left;
+	
+	
+}
+
+
+.foot {
+	background-color:#0000ff;
+	padding:0.5%;
+	margin-top:32%;
+}

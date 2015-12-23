@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+.head {
+	background-color:#497e7e;
+	padding:3%;
+}
+
+.down {
+	padding-bottom:31%;
+}
+
+
+.navigation {
+	background-color:#d700ac;
+	width:20%;
+	padding-bottom:30%;
+	margin: 1% 1% 1% 0;
+	float:left;
+}
+
+.content {
+	background-color:#49ff00;
+	width:79%;
+	padding-bottom:30%;
+	margin: 1% 0 1% 0;
+	float:right;
+}
+
+.foot {
+	background-color:#0049ff;
+	padding:3%;
+	margin-top:1%;
+}

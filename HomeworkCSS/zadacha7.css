@@ -1,0 +1,130 @@
+@CHARSET "UTF-8";
+
+.tag {
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   z-index: 1000;
+}     
+
+.header {
+	background-color:black;
+	width:100%;
+}
+
+.secondHeader {
+	background-color:red;
+	margin-top: 3.1%;
+	width:100%;
+	padding-top:1.5%;
+}
+
+.secondHeader a{
+	display:inline;
+	font-family: 'Coming Soon', cursive;
+	color:white;
+	padding: 2% 0 0 8%;
+	text-decoration:none;
+	font-size:18px;
+}
+
+.headline {
+	margin-right:40%;
+	display:inline;
+}
+
+.firstMenu {
+	padding: 2% 1% 0 8%;
+	display:inline;
+	font-size:18px;
+	font-family: 'Coming Soon', cursive;
+}
+
+a{
+	color:#ccccb3;
+	text-decoration:none;
+	padding-right:10px;
+}
+
+#movies {
+	display:inline;
+	font-family: 'Coming Soon', cursive;
+	color:white;
+	font-size:30px;
+	padding-left:4%;
+}
+
+img {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+ .ghost {
+	/* position centered */
+	display:inline-block;
+	position: relative;
+	top: 10%;
+	left:30%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	/* text styles */
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	font-size: 100%;
+	letter-spacing: 0.1em;
+	color:#8c8c8c;
+	font-weight: bold;
+	/* modify text */
+	text-decoration:none;
+	text-transform:uppercase;
+	text-rendering:optimizeLegibility;
+	/* add a border */
+	border:0.15em solid #8c8c8c;
+	padding: 2%;
+	border-radius:50%;
+	/* animate the change */
+	-webkit-transition: color 300ms, background 500ms, border-color 700ms;
+	transition: color 300ms, background 500ms, border-color 700ms;
+ }
+ .ghost:hover {
+	background:#ccccb3;
+    border-color:white;
+    color:black;
+ }
+            
+ .rounded {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.text {
+	left: 50%;
+	top: 36%;
+	font-family: 'Lora', serif;
+	color:#ccccb3;
+	font-size:40px;
+	font-weight:bold;
+}
+
+.explanation{
+	left: 28%;
+	top: 48%;
+	right:16%;
+	font-family: 'Lora', serif;
+	color:#8c8c8c;
+	font-size:26px;
+	text-align:center;
+}
+            
+    
