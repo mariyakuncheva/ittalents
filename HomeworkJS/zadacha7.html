@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function lbsKg(form) 
+{
+	wt=form.wt.value;
+	if( (wt==null) || (wt=="") || (isNaN(wt)) )
+	{
+	form.answer.value="Wrong input!";
+	form.wt.focus();
+	form.wt.select();
+	return false; 
+	}
+	if  (form.choice[0].checked) { 
+		var answer= wt / 2.204; 
+		var round=Math.round(10*answer)/10;
+		var text1=" lbs = ";
+		var text2=" kg";
+		form.answer.value=wt + text1 + round + text2;
+	} 
+	if (form.choice[1].checked) {
+		var answer=wt * 2.204;
+		var round=Math.round(10*answer)/10;
+		text1=" kg = ";
+		text2=" lbs";
+		form.answer.value=wt + text1 + round + text2;
+	}
+}
+</script>
+</head>
+
+<body>
+<form name="wtForm">
+<div align="center">
+  <table border="3" bordercolordark="#000000">
+    <tr>
+      <td>
+		<table bgcolor="#C0C0C0" bordercolordark="#000000">
+			<tr>
+				<td>
+					<p>Enter weight:</p>
+				</td>
+				<td>
+					<input type=text name=wt size=5>
+  				</td>
+  			</tr>
+			<tr>
+				<td>
+					<p>Convert to kilograms</p>
+				</td>
+				<td>
+					<input type="radio" value="0" name="choice">
+  				</td>	
+  			</tr>
+			<tr>
+				<td>	
+					<p>Convert to pounds</p>
+				</td>
+				<td>
+					<input type="radio" value="1" name="choice">
+    			</td>
+    		</tr>
+			<tr>
+                <td align="center" colspan=2><input onclick="lbsKg(this.form)" type="button" value="CONVERT">
+                </td>
+            </tr>
+            <tr>
+            	<td>
+            		<p>Result:</p>
+            	</td>
+            	<td>
+            		<input name="answer" size="27" bgcolor="#C0C0C0" value="Answer appears here" >
+  				</td>
+  			</tr>
+			<tr>
+ 			 	<td align="center" colspan=2><input type="reset" value="RESET">
+  				</td>
+  			</tr>
+  	  	 </table>
+  	 	</td>
+  		</tr>
+ 	 </table>
+	</div>
+	</form>
+</body>
+</html>

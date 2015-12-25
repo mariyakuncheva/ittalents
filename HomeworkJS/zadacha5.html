@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p>Въведете радиус на сферата, за да пресметнете обема й.</p>  
+	<form action="" method="post" id="MyForm">  
+		<label for="radius">Радиус</label><input type="text" name="radius" id="radius" required> 
+		<label for="volume">Обем</label><input type="text" name="volume" id="volume">  
+		<input type="submit" value="Сметни" id="submit">   
+	</form>  
+</body>
+<script>
+function volume_sphere()  
+{  
+ var volume;  
+ var radius = document.getElementById('radius').value;  
+ radius = Math.abs(radius);  
+ volume = (4/3) * Math.PI * Math.pow(radius, 3);  
+ volume = volume.toFixed(4);  
+ document.getElementById('volume').value = volume;  
+ return false;  
+}   
+window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
+</script>
+</html>

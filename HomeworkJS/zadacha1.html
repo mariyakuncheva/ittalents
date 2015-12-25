@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+	var exp=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];  ;
+	var expCounts = {};
+	var maxKey = '';
+	for(var i = 0; i < exp.length; i++)
+	{
+	    var key = exp[i];
+	    if(!expCounts[key]){
+	     expCounts[key] = 0;
+	    }
+	    expCounts[key]++;
+	    if(maxKey == '' || expCounts[key] > expCounts[maxKey]){
+	        maxKey = key;
+	    }
+	}
+
+	console.log(maxKey + " (" + expCounts[maxKey] + " times)");
+	 </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	var theImages = new Array() // do not change this
+	theImages[0] = '../Homework CSS/photos/1.jpg';
+	theImages[1] = '../Homework CSS/photos/2.jpg';
+	theImages[2] = '../Homework CSS/photos/3.jpg';
+	theImages[3] = '../Homework CSS/photos/4.jpg';
+	theImages[4] = '../Homework CSS/photos/5.jpg';
+	theImages[5] = '../Homework CSS/photos/6.jpg';
+	theImages[6] = '../Homework CSS/photos/7.jpg';
+	
+	var j = 0;
+	var p = theImages.length;
+	var preBuffer = new Array();
+	for (i = 0; i < p; i++){
+	   preBuffer[i] = new Image();
+	   preBuffer[i].src = theImages[i];
+	}
+	var whichImage = Math.round(Math.random()*(p-1));
+	function showImage(){
+	document.write('<img src="'+theImages[whichImage]+'">');
+	}
+</script>
+
+</head>
+<body>
+<div id="box">
+<script>
+showImage();
+</script>
+</div>
+</body>
+</html>
