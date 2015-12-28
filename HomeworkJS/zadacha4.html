@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<a href="#">Google</a>
+<br/>
+<a href="#">Facebook</a>
+<br/>
+<a href="#">Instagram</a>
+<br/>
+<a href="#">Twitter</a>
+<br/>
+<button id="btn" onclick="numberOfAnchors()"> Submit </button>
+</body>
+<script>
+function numberOfAnchors () {
+	var firstAnchor = document.getElementsByTagName('a')[0].innerHTML;
+	alert(firstAnchor);
+	}
+</script>
+</html>
