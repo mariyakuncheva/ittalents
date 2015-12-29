@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="" name="someform">
+
+	<label for="username">Username:</label>
+    <input type="text" value="" name="inputname" id="username" />
+    <p id="err_name"> </p>
+    
+    <label for="pass">Password:</label>
+    <input type="password" value="" name="pass" id="pass" />
+    <p id="err_pass"> </p>
+    
+   	<label for="country">Coutry:</label>
+        <select id="country" name="country" onchange="show()">
+        	<option value="choose">...</option>
+            <option value="bulgaria">Bulgaria</option>
+            <option value="russia">Russia</option>
+            <option value="france">France</option>
+            <option value="spain">Spain</option>
+            <option value="other">Other</option>
+        </select>
+    <br/>
+     
+    <div id="other-country">   
+    <label for="other-country">Other coutry:</label>    
+    <input type="text" name="other-country"/>
+    </div>
+    
+    <br/>
+    <input type="submit" value="submit" />
+</form>
+
+<script>
+function testForm ( e ) {
+var inputname = this.inputname,
+usernameValue = document.getElementById("username").value,
+    warning = false;
+    function isBlank ( elem ) {
+        return elem.value === "";
+    }
+    
+    if ( isBlank(inputname) || usernameValue.length < 5){
+        warning = "<span style=\"color:red;\">Username must be at least 5 characters long!</span>";
+    }
+    
+    if ( warning ){
+        e.preventDefault();
+        document.getElementById("err_name").innerHTML=warning;
+    }
+    
+    var pass = this.pass,
+    passValue = document.getElementById("pass").value,
+    warning = false;
+    function isBlank ( elem ) {
+        return elem.value === "";
+    }
+    
+    if ( isBlank(pass) || passValue.length < 8 ){
+        warning = "<span style=\"color:red;\">Password must be at least 8 characters long!</span>";
+    }
+    
+    if ( warning ){
+        e.preventDefault();
+        document.getElementById("err_pass").innerHTML=warning;
+    }
+
+}
+function show(){
+	var country = document.getElementById('country'),
+    countryValue = country.options[country.selectedIndex].value;
+    if(countryValue == 'other'){
+		document.getElementById('other-country').style.display = 'block';
+	} else {
+		document.getElementById('other-country').style.display = 'none';
+	}
+}
+document.someform.onsubmit = testForm;
+</script>
+</body>
+</html>
