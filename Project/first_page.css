@@ -1,0 +1,162 @@
+@CHARSET "UTF-8";
+
+.tag {
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   z-index: 1000;
+}     
+
+.header {
+	background-image: url("../Project/images/back1.png");
+	background-repeat: no-repeat;
+	width:70%;
+	top:0;
+	display:inline;
+	height:32%;
+	margin-left:30%;
+}
+
+.icon {
+	padding-left:10%;
+	}
+
+.headline {
+	display:inline;
+	font-family: 'Pacifico', cursive;
+	font-size:70px;
+	text-align:center;
+	padding: 4% 0 0 10%;
+}
+
+#search {
+	display: inline;
+    float: right;
+    padding:5% 0 0 78%;
+
+}
+
+#search input[type="text"] {
+    
+    border: 1px solid #d1d1d1;
+    font: bold 12px Arial,Helvetica,Sans-serif;
+    color: #bebebe;
+    width: 150px;
+    padding: 6px 15px 6px 35px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    }
+
+#search input[type="text"]:focus {
+    width: 200px;
+    }
+    
+.fon{
+	display:inline;
+	background:url("../Project/images/star.png") repeat-x;
+	height:50px;
+	width:100%;
+}    
+
+.favourite {
+	background-image:url("../Project/images/fav.png");
+	background-repeat:no-repeat;
+	height:76px;
+	width:100%;
+}
+
+.left{
+	border: 1px solid #000;
+	border-radius: 15px;
+	background-image:url("../Project/images/collage2.png");
+}
+.right{
+
+}
+.photo {
+	width:50%; 
+	display:inline;
+	float:left;
+}
+.photo span {
+	display: inline-block;
+    margin: 30px;
+    width: 150px;
+    height: 200px;
+    border: 1px solid #000;
+    border-radius:15px;
+}
+
+.login {
+	display:inline;
+	border: 1px solid #000;
+	border-radius:15px;
+	width: 44%;
+	float: left;
+	margin-left:4%;
+	padding: 10% 0 29% 1%;	
+	background-image:url("../Project/images/birds.png");
+	background-repeat: no-repeat;
+}
+
+#username {
+  outline: none;
+  width: 60%;
+  border: 1px solid black;
+  border-radius:15px;
+  margin: 0 0 6% 20%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  font-wieght: 400;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  text-align:center;
+}
+
+#password {
+  margin-left:2%;
+  outline: none;
+  width: 60%;
+  border: 1px solid black;
+  border-radius:15px;
+  margin: 0 0 0 20%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  font-wieght: 400;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  text-align:center;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	padding:10% 0 0 30%;
+	font-size:20px;
+	margin: 0 0 0 10%;
+}
+
+#log {
+	 margin: 6% 0 0 36%;
+	 padding:2%;
+	 border-radius:10px;
+}
+
+#sign {
+	 margin: 0 0 0 4%;
+	 padding:2%;
+	 border-radius:10px;
+}
+
+#fb {
+	 margin: 0 0 0 36%;
+}
