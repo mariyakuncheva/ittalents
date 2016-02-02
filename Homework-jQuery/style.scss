@@ -1,0 +1,49 @@
+
+table {
+	border-collapse: collapse;
+	width: 580px;
+	clear: both;
+	margin-top: 20px;
+	
+	tr:nth-child(odd){
+		background-color: #ffff66;
+		
+	}
+	span {
+		float: right;
+	}
+	td {
+  		text-align:center;
+ 	}
+}
+
+#form{
+
+	form{
+		overflow: auto;
+		padding: 10px;
+		width: 560px;
+		background-color: #cc66ff;
+		#brand{
+			width: 100px;
+		}
+		#model{
+			width: 50px;
+		}
+		#year{
+			width: 40px;
+		}
+		#km{
+			width: 50px;
+		}
+		label{
+			width: 50px;
+			clear: both;
+		}
+		div{
+			margin-left: 10px;
+			float: left;
+		}
+		
+	}
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery-2.2.0.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="form">
+			<form action="" method="post" id="panel">
+				<div>
+					<label for="brand">Марка</label>
+					<input type="text" id="brand" name="brand">
+				</div>
+				<div>
+					<label for="model">Модел</label>
+					<input type="text" id="model" name="model">
+				</div>
+				<div>
+					<label for="year">Година</label>
+					<input type="text" id="year" name="year">
+				</div>
+				<div>
+					<label for="km">Километри</label>
+					<input type="text" id="km" name="km">
+				</div>
+				<div>
+					<input type="submit" value="Добави">
+				</div>
+			</form>
+		</div>
+		<div>
+			<div>
+				<table>
+					<tr>
+						<th>№</th>
+						<th>Марка</th>
+						<th>Модел</th>
+						<th>Година</th>
+						<th>Километри</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Audi</td>
+						<td>A3</td>
+						<td>2010</td>
+						<td>10000<span></span><span></span></td>
+						
+					</tr>
+				</table>
+			</div>
+		</div>
+</body>
+<script type="text/javascript">
+	$(function(){
+		var submit = document.getElementById('form');
+		$('form').on('submit', subm);
+		$('.remove').on('click',function(e){console.log(this)});
+		
+		function subm(event){
+			event.preventDefault();
+			addRow(submit);
+			$('.edit').off('click');
+			$('.edit').on('click',editEvent);
+			$('#panel')[0].reset();
+		}
+		
+		function editEvent(e){
+			var element = e.target.parentElement.parentElement.children;
+			$('form #brand').val(element[1].innerText);
+			$('form #model').val(element[2].innerText);
+			$('form #year').val(element[3].innerText);
+			$('form #km').val(element[4].innerText);
+		}
+		
+		function addRow(form){
+			var newRow = $('table tr').length;
+			var content = '<tr>' +
+				'<td>' + newRow + '</td>' +
+				'<td>' + $('#brand', form).val() + '</td>' +
+				'<td>' + $('#model', form).val() +  '</td>' +
+				'<td>' + $('#year', form).val() +  '</td>' +
+				'<td>' + $('#km', form).val() + '</td>' + '</tr>';
+			$('table').append(content);
+		}
+	})
+	</script>
+</html>
