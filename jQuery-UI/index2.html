@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="index2.css">
+<link rel="stylesheet" href="assets/jquery-ui-1.11.4.custom/jquery-ui.min.css">
+<link rel="stylesheet" href="assets/jquery-ui-1.11.4.custom/jquery-ui.theme.min.css">
+</head>
+<body>
+<p>Изберете дати на почивката:</p>
+<p>От дата: <input type="text" id="datepicker1"></p>
+<p>До дата: <input type="text" id="datepicker2"></p>
+<br/>
+<button id="plan">Запази</button>
+
+<div class="alpha" style="height: 200px;">
+<p>Всички курорти:</p>
+  <span class="tile">Варна</span>
+  <span class="tile">Златни пясъци</span>
+  <span class="tile">Слънчев бряг</span>
+  <span class="tile">Лозенец</span>
+  <span class="tile">Св.Влас</span>
+  <span class="tile">Бургас</span>
+  <span class="tile">Боровец</span>
+  <span class="tile">Банско</span>
+  <span class="tile">Рибарица</span>
+  <span class="tile">Пампорово</span>
+</div>
+
+<div class="gamma" style="height: 200px;">
+<p>Избрани курорти:</p>
+</div>
+</body>
+<script type="text/javascript" src="assets/jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
+<script type="text/javascript" src="assets/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script>
+$(function() {
+    $( "#datepicker1" ).datepicker();
+    $( "#datepicker2" ).datepicker();
+  });
+
+$('#plan').click(function() { 
+var go = $("#datepicker1").val();
+var back = $("#datepicker2").val();
+var days = back - go;
+    if (go === "" || back === "") {
+        alert("Изберете дати!");
+    }
+    if (days > 3 || days < 3) {
+        alert("Почивката трбява да е 3 дни!");
+    }
+    
+});
+
+$('.alpha').sortable({
+  connectWith: '.gamma',
+  receive: function (event, ui) {
+    if ($(ui.item).hasClass('special')) {
+      ui.sender.sortable('cancel');
+    }
+  }
+});
+
+
+$('.gamma').sortable({
+  appendTo: document.body,
+  items: '.tile',
+  connectWith: '.alpha',
+  receive: function (event, ui) {
+    //console.log(event, ui.item);
+    //ui.item.remove(); // remove original item
+  }
+});
+</script>
+</html>
