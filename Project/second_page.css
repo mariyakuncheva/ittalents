@@ -1,5 +1,11 @@
 @CHARSET "UTF-8";
 
+body {
+	background-image: url("../Project/images/back3.jpg");
+	background-repeat: no-repeat;
+	min-width:320px;
+}
+
 .tag {
    position: absolute;
    left: 0px;
@@ -8,8 +14,6 @@
 }     
 
 .header {
-	background-image: url("../Project/images/back1.png");
-	background-repeat: no-repeat;
 	width:70%;
 	top:0;
 	display:inline;
@@ -18,7 +22,7 @@
 }
 
 .icon {
-	padding-left:10%;
+	padding-left:20%;
 	}
 
 .headline {
@@ -26,13 +30,13 @@
 	font-family: 'Pacifico', cursive;
 	font-size:70px;
 	text-align:center;
-	padding: 4% 0 0 10%;
+	padding: 2% 0 0 0;
 }
 
 #search {
 	display: inline;
     float: right;
-    padding:5% 0 0 78%;
+    padding:4% 0 0 70%;
 
 }
 
@@ -61,7 +65,7 @@
     }
     
 .nav-section {
-	width:10%; 
+	width:12%; 
 	float:left;
 	border: 1px solid #000;
 	border-radius:15px;
@@ -69,21 +73,22 @@
 }
 
 .nav-section img {
-	width: 60px;
-	height:	60px;
+	width: 100px;
+	height:	100px;
 	display: inline;
 	margin-left: 20%;
 	margin-bottom: 10%;
 }
 
 .profile-photo img {
-	width: 100px;
-	height: 100px;
-	margin-left: 10%;
+	width: 150px;
+	height: 150px;
+	margin-left: 4%;
+	margin-top: 12%;
 	margin-bottom: 30%;
+	border-radius:15%;
 	
 }
-
 
 .main-page {
 	width:85%; 
@@ -91,21 +96,18 @@
 	border: 1px solid #000;
 	border-radius:15px;
 	margin-top: 5%;
-	background-image:url("../Project/images/collage.jpg");
+	border-bottom:none;
 }
 
 .selections span {
-	
-	border: 1px solid #000;
-	border-radius:15px;
-	margin: 5%;
-	background-color: white;
+	font-family: 'Gloria Hallelujah', cursive;
+	margin: 1% 8% 0 5% ;
 }
 
 a {
 	text-decoration: none;
 	color: black;
-	padding:2%;
+	padding: 2%;
 	font-size:20px;
 }
 .photos {
@@ -113,8 +115,7 @@ a {
 }
 .photos span {
 	display: inline-block;
-    margin: 40px;
-    width: 150px;
+    width: 200px;
     height: 200px;
     border: 1px solid #000;
     border-radius:15px;
